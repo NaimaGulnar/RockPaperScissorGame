@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    background-image: url(./bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Tektur', cursive;
+}
+
+/* buttons */
+.button{
+    padding: 1rem 2rem;
+    margin: 1.3rem auto;
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+/* landing page */
+.landing-page{
+    background-image:url("./bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black; 
+}
+.heading{
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 6%;
+    text-shadow: 4px 4px 7px rgb(120, 119, 119) ;
+}
+#play{
+    background-color: rgb(193, 226, 245);
+    box-shadow: 4px 4px 7px rgba(6, 6, 6);
+}
+#play:hover{
+    color: white;
+    font-size: 27px;
+    background-color: black;
+    box-shadow: 4px 4px 7px rgb(97, 95, 95);
+}
+
+/* cards page */
+.cards-section{
+    display: none;
+    height: 100vh;
+}
+.card-heading{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    padding-top: 30px;
+}
+.mycard{
+    display: flex;
+    flex-direction: column;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+.img{
+    width: 15rem;
+    height: 15rem;
+    align-items: center;
+    border-radius: 50%;
+    margin: 40px 40px;
+    box-shadow: 4px 4px 25px rgb(97, 95, 95);
+}
+.img:hover{
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+#card-btn{
+    background-color: rgb(193, 226, 245);
+    box-shadow: 4px 4px 7px rgba(6, 6, 6);
+}
+#card-btn:hover{
+    color: white;
+    font-size: 27px;
+    background-color: black;
+    box-shadow: 4px 4px 7px rgb(97, 95, 95);
+}
+
+/* result showing page */
+.result{
+    background-image:url("./bg4.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+}
+.winner{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.para{
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#play-again{
+    background-color: rgb(193, 226, 245);
+    box-shadow: 4px 4px 7px rgba(6, 6, 6);
+}
+#play-again:hover{
+    color: white;
+    font-size: 27px;
+    background-color: black;
+    box-shadow: 4px 4px 7px rgb(97, 95, 95);
+}
+
+@media screen and (max-width: 480px) {
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 6%;
+    }
+    .mycard{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 5rem;
+        height: 5rem;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        box-shadow: 4px 4px 25px rgb(97, 95, 95);
+    }
+    #card-btn{
+        background-color: rgb(193, 226, 245);
+        box-shadow: 4px 4px 7px rgba(6, 6, 6);
+        padding: 0.5rem 1rem;
+        margin: 0.6rem auto;
+        border-radius: 1rem;
+        font-weight: bolder;
+        font-size: 0.7rem;
+    }
+  }
